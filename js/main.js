@@ -33,7 +33,7 @@ elInput.addEventListener("change", function(evt) {
 
 async function getMovie(value) {
     // const response = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=b0a9747e&s=panda");
-    const response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${value}&page=${activePage}`);
+    const response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${value}&page=${activePage}`);
     const data = await response.json()
     let totalPage = Math.ceil(data.totalResults / 10);
     if(activePage == 1){
