@@ -1,0 +1,86 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.js-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.item {
+    width: 250px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    color: white;
+    background-color: darkcyan;
+    border-radius: 8px;
+}
+
+.prev {
+    width: 50px;
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: blue;
+    transition: all 0.4s ease;
+}
+
+.prev:hover {
+    opacity: 0.8;
+}
+
+.next {
+    width: 50px;
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: green;
+    transition: all 0.4s ease;
+}
+
+.next:hover {
+    opacity: 0.6;
+}
+
+.title {
+    text-align: center;
+    font-size: 44px;
+}
+
+.js-input {
+    display: block;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
