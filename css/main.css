@@ -22,7 +22,7 @@ img {
     object-fit: cover;
 }
 
-.container {
+.containers {
     width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -84,3 +84,19 @@ img {
     margin-right: auto;
     margin-left: auto;
 }
+
+.nav{
+    display: flex;
+    
+}
+
+.pagination{
+    max-width: 347px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 10px;
+}
+
