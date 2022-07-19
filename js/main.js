@@ -5,8 +5,6 @@ let elFilmsTemplate = document.querySelector(".films-template").content;
 let elNextBtn = document.querySelector(".next");
 const API_KEY = "b0a9747e";
 
-let activePage = 1;
-
 const filmsFragment = document.createDocumentFragment()
 const renderMovie = (array, node) => {
     node.innerHTML = "";
